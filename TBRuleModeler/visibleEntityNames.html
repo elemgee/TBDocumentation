@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Helper File for RuleModeler</title>
+    </head>
+	<body>
+        <section>
+            
+            <article>
+                <header><h2>visibleEntityNames</h2></header>
+                <body>
+
+<p>set a list of Entities that are visible, used in QueryAll</p>
+           
+<pre>
+Sample :
+	0 : *true* => visibleEntityNames = "smartDefaultEntityNames" [com.webobjects.directtoweb.DefaultAssignment]
+	
+	100 : *true* => visibleEntityNames = ("Entity1", "Entity2") [com.webobjects.directtoweb.Assignment]
+	
+smartDefaultEntityNames is a feature in DefaultAssignment
+
+	Returns a sorted NSArray of the names of the entities in the application.
+	Entities having fewer than three relationships and no attributes are
+	assumed to be join tables and are excluded.
+	
+@see :
+	readOnlyEntityNames
+	
+	10 : task = 'queryAll' => displayPropertyKeys = "visibleEntityNames" [er.directtoweb.ERDKeyValueAssignment]
+</pre>
+
+                </body>
+            </article>
+        </section>
+        <footer><p>Last Modified on 2013/12/30 by Ken Ishimoto</p></footer>
+    </body>
+</html>

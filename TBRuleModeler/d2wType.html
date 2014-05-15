@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Helper File for RuleModeler</title>
+    </head>
+	<body>
+        <section>
+            
+            <article>
+                <header><h2>d2wType (string)</h2></header>
+                
+                <p>only D3W</p>
+                <p>D2WType is an attribute right-hand side key.  Use this to define the UI component to use for this attribute defined on the left-side.</p>
+                <p>The template engine will generate default inactive rules with D2WType defined for each attribute.  You should activate these rules and change the type if needed.</p>
+                <p>If you have a LONGTEXT you will need to change the D2WType from "string" to "tiny".</p>
+                <p>Some commonly used right side values>/p>
+                <p>"amount" for currency attributes.</p>
+                <p>"attachment" for ERAttachment attributes.</p>
+                <p>"enum" for enum attributes.  See "classname" right-hand side key.</p>
+                <hr />
+                
+                <p>"enumsAsCheckboxes" for enum attributes.  See "classname" or "showImage" right-hand side key.</p>
+<pre>
+(entity.name = 'Xxx' and propertyKey = 'xxx') => d2wType = "enumsAsCheckboxes" [com.webobjects.directtoweb.Assignment]
+          
+(entity.name = 'Xxx' and propertyKey = 'xxx') => className = "me.webobjects.enums.WOdkaPaymentsEnums" [com.webobjects.directtoweb.Assignment]
+
+(entity.name = 'Xxx' and propertyKey = 'xxx') => showImage = "true" [com.webobjects.directtoweb.BooleanAssignment]
+	Enums withe the interface IWOdkaLocalizableEnumsWithIcon can be displayed as image instead of text
+	IWOdkaLocalizableEnumsWithIcon の Enums の場合はテキストの替わりに画像を表示します
+</pre>
+                <hr />
+                <p>"attachment"<\p>
+                <p>"data"<\p>
+                <p>"dts"<\p>
+                <p>"imageCheckbox"<\p>
+                <p>"largeString"<\p>
+                <p>"mail" for email attributes.</p>
+                <p>"markDown"<\p>
+                <p>"password"<\p>
+                <p>"qualifier"<\p>
+                <p>"roles"<\p>
+                <p>"scheduleTask"<\p>
+                <p>"static"<\p>
+               	<p>"string" for varchar attributes.</p>
+                <p>"stringWithCode"<\p>
+                <p>"tagField"<\p>
+                <p>"tiny" for long text and tinyMCE editor attributes.</p>
+                <p>"toManyCheckboxes" for editable list of entities in a relationship.</p>
+                
+                <p>"toManyIsTrue" for editable list of entities in a relationship that shows only true values.</p>
+                <p><a href="trueRelationship.html">@see trueRelationship</a></p>
+                <hr />
+                
+                <p>"toOne"<\p>
+                <p>"toOnePopUp" for toOne look relationships.</p>
+                <p>"url" for web address attributes.</p>
+                
+            </article>
+        </section>
+        <footer><p>Last Modified on 2014/01/07 by Paul Yu</p></footer>
+    </body>
+</html>

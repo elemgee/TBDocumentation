@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Helper File for RuleModeler</title>
+    </head>
+	<body>
+        <section>
+            
+            <article>
+                <header><h2>componentAvailable</h2></header>
+                <body>
+	                <p>Deprecated. Used by web assistant to choose propertylevel component for a given attribute or relationship. See d2wType for D3W equivalent.</p>
+	                <p><b>From D2WContextKeys document:</b><br />
+	                <dl>
+	<dd><b>Type:</b> <code>String</code></dd><br />
+
+	<dd><b>Appears:</b> Rule's key (right-hand side)</dd><br />
+
+	<dd>The name of a property-level component that can be used to display a property. The Web Assistant asks the rule system for all rules that can fire for this key to determine which property-level components can be used to display a property.</dd>
+</dl>
+
+	                </p>
+	                <h3>Example usage</h3>
+	                <p><i>0 : (task = 'edit' and (attribute.className = 'java.lang.Number' or attribute.className = 'java.math.BigDecimal')) => componentAvailable = "ERD2WEditPercentage" [com.webobjects.directtoweb.Assignment]</i></p>
+                </body>
+            </article>
+        </section>
+        <footer><p>Last Modified on 2014/04/16 by David Holt</p></footer>
+    </body>
+</html>

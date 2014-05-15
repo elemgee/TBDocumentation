@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Helper File for RuleModeler</title>
+    </head>
+	<body>
+        <section>
+            
+            <article>
+                <header><h2>excelFileName (string)</h2></header>
+                <body>
+<p>this set the file name for an excel export.</p>
+<p>also check 
+<a href="excelCellWidth.html">excelCellWidth</a>, 
+<a href="excelCellTypeForProperty.html">excelCellTypeForProperty</a>, 
+<a href="excelCellFormatForProperty.html">excelCellFormatForProperty</a>, <br />
+<a href="excelDefaultColumnWidthForSheet.html">excelDefaultColumnWidthForSheet</a>
+</p>
+
+<pre>
+Sample :
+	100 : PC = 'ListExcel#' => excelFileName = "Filename.xls" [com.webobjects.directtoweb.Assignment]
+	
+	
+D2W :
+	100 : PC = 'ListExcel#' => displayPropertyKeys = ("(SheetName)", "attribute1", "attribute2") [com.webobjects.directtoweb.Assignment]
+	
+D3W :	
+	100 : PC = 'ListExcel#' => DPK = (
+		"(SheetName)", 
+		"attribute1:20:bold", 
+		"[[AttributeName]]:[[CellWidth]]:[[style]]", 
+	 ) [com.webobjects.directtoweb.Assignment]
+</pre>              
+
+                </body>
+            </article>
+        </section>
+        <footer><p>Last Modified on 2014/01/09 by Ken</p></footer>
+    </body>
+</html>

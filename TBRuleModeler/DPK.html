@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Helper File for RuleModeler</title>
+    </head>
+	<body>
+        <section>
+            
+            <article>
+                <header>
+                    <h2>DPK</h2>
+                </header>
+                
+<p>DPK [D3W only], called in D2W 'displayPropertyKeys'</p>
+<p>Format : the Format is an plist Array '("[TabName]", "(SectionName)", "Attribute" ...)'.</p>
+<p>only the List view has no Tab and Section.</p>
+
+<p>Localization :</p>
+<pre>
+    * Tabs can be localized in the Localization.strings file
+        "TabKeys.name" = "localizedName";
+    
+    * TODO ... more coming
+</pre>
+
+<p>Combined Properties :</p>
+<pre>
+    * Writing whitespacesget trimmed out
+    
+    * combine 2 Attributes with the '|' character' let display in 1 column
+    
+        "attributeName1 | attributeName2"
+        
+    * TODO ... more coming
+</pre>
+
+<p>OptionalTag :</p>
+<pre>
+    * in Edit mode you can use the '@static' keyword that makes it readonly
+
+        "firstName@static"
+     
+	* starting a property with '-' will show the propertyName but will automatically
+		hide the value and instead show a hr tag. so good for debugging to remove a
+		property quickly.
+		
+		"-firstName"
+     
+	* you can use 'dummy' as propertyName, this will hide the PropertyName and for
+		the value it will display a markdown file from the Resource folder.     
+     
+     	"dummy@option=WOdka:RoleHelper.md"
+     	
+     	'WOdka:RoleHelper.md' = [[FrameworkName]]:[[FileName]]
+     
+     
+    * TODO ... more coming
+</pre>
+
+<p>Sample :</p>
+<pre>
+(
+    "[TabName]",
+    "(SectionName)",
+    "firstName",
+    "lastName",
+    "[TabName]",
+    "(SectionName)",
+    "firstName"
+)
+</pre>
+            </article>
+        </section>
+        <footer><p>Last Modified on 2014/01/15 by Ken</p></footer>
+    </body>
+</html>

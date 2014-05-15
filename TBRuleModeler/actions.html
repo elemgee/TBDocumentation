@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Helper File for RuleModeler</title>
+    </head>
+	<body>
+        <section>
+            
+            <article>
+                <header><h2>actions</h2></header>
+                <body>
+	                <p>This key is used to define which action buttons will appear in a D2W page. See also "isEntityInspectable", "isEntityEditable", "readOnly", "isEntityDeletable" their short forms "crud" and "cruds", and "isEntityPrintable"</p>
+	                <p>Actions that are defined in the D2W rule system are "inspectAction", "editAction", "deleteAction", "removeRelatedAction", "selectAction", "controllerAction", "printAction"</p>
+	                <p>Positions that are defined for buttons are "left", "right", "center", "top", and "bottom"
+	                <h3>Example usage</h3>
+	                <p><i>100 : task = 'select' => actions = {"left" = ("selectAction"); } [com.webobjects.directtoweb.Assignment]</i></p>
+	                <p><i>100 : pageConfiguration = 'ListDocument' => actions = {"right" = ("editAction", "controllerAction"); } [com.webobjects.directtoweb.Assignment]</i></p>
+	                <p><i>100 : pageConfiguration = 'ListDocument' => actions = {"" = ""; } [com.webobjects.directtoweb.Assignment]</i></p> 
+	                <p><i>20 : *true* => actions = {"left" = ("controllerAction"); "right" = ("deleteAction"); } [com.webobjects.directtoweb.Assignment]</i></p>
+                
+                	<p><i> Note that 'pageConfiguration' can be shortened to 'PC'. Thus the rules can also be written as follows:</i></p>
+                	<p><i>100 : task = 'select' => actions = {"left" = ("selectAction"); } [com.webobjects.directtoweb.Assignment]</i></p>
+	                <p><i>100 : PC = 'ListDocument' => actions = {"right" = ("editAction", "controllerAction"); } [com.webobjects.directtoweb.Assignment]</i></p>
+	                <p><i>100 : PC = 'ListDocument' => actions = {"" = ""; } [com.webobjects.directtoweb.Assignment]</i></p> 
+	                <p><i>20 : *true* => actions = {"left" = ("controllerAction"); "right" = ("deleteAction"); } [com.webobjects.directtoweb.Assignment]</i></p> 
+                </body>
+            </article>
+        </section>
+        <footer><p>Last Modified on 2013/12/19 by Paul Halliday</p></footer>
+    </body>
+</html>

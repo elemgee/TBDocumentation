@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>Helper File for RuleModeler</title>
+    </head>
+	<body>
+        <section>
+            
+            <article>
+                <header><h2>allowCollapsing</h2></header>
+                <body>
+	                <p>This key is used to define whether the display of contained elements is collapsed or not. Used in components that feature collapsible containers such as relationships inside D2WCollapsibleComponentContent.</p>
+	                <p>
+	                                	   <b>From D2WContextKeys document:</b><br />
+    <dl>
+    <dd><b>Type:</b> <code>Integer</code></dd><br />
+    <dd><b>Appears:</b> Rule's key (right-hand side)</dd><br />
+    <dd>A flag that has a value of 1 if the current property level components can be collapsed and a value of 0 otherwise. This flag is primarily used by the display and edit components for relationships.</dd><br />
+    </dl></p>
+	                <h3>Example usage</h3>
+	                <p><i>100 : (pageConfiguration = 'ListDocument' and propertyKey = 'comments') => allowCollapsing = "true" [com.webobjects.directtoweb.BooleanAssignment]</i></p>
+                
+                	<p><i> Note that 'pageConfiguration' can be shortened to 'PC'. Thus the rules can also be written as follows:</i></p>
+                	<p><i>100 : (PC = 'ListDocument' and propertyKey = 'comments') => allowCollapsing = "true" [com.webobjects.directtoweb.BooleanAssignment]</i></p>
+
+
+                </body>
+            </article>
+        </section>
+        <footer><p>Last Modified on 2014/04/15 by David Holt</p></footer>
+    </body>
+</html>
